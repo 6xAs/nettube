@@ -1,8 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
+use App\Filme;
+use DB;
+use File;
+use Illuminate\Database\Eloquent\Model;
+use validador;
+use Session;
+use Redirect;
 
 class PainelController extends Controller
 {
@@ -23,6 +29,10 @@ class PainelController extends Controller
      */
     public function index()
     {
-        return view('painel.home');
+        $filme = \App\filme::All();
+        return view('painel.home', compact('filme'));
+
     }
+
+
 }

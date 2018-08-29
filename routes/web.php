@@ -28,13 +28,34 @@ Auth::routes();
 Route::get('home-painel', 'PainelController@index')->name('painel.home');
 
 // Inserir Filme no BD
-Route::get('input-filme', 'FilmeController@insert');
+Route::post('input-filme', 'FilmeController@insert');
+
 // Pag. Inserir Filme
 Route::get('inserir-filme', function () {
     return view('painel.inserir-filme');
 });
 
 // Pag. Listar filmes
-Route::get('listar-filmes', function () {
-    return view('painel.listar-filmes');
+Route::get('listar-filmes', 'FilmeController@listar')->name('listar-filmes');
+
+// Pag. Filme Details (Edit)
+Route::resource('editfilme', 'FilmeController');
+
+Route::resource('filmes', 'FilmeController');
+
+// Deletar Filme
+Route::resource('deletarfilme', 'FilmeController');
+
+
+// Pag. Inserir banner
+Route::get('inserir-banner', function () {
+    return view('painel.inserir-banner');
 });
+
+// Pag. Listar Banner
+Route::get('listar-banner', function () {
+    return view('painel.listar-banner');
+});
+
+// Inserir Banner no BD
+Route::post('input-banner', 'BannerController@insert');

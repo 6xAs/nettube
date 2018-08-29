@@ -6,7 +6,7 @@
 
 @include('template-painel.content-main')
 
-@section('title', 'Inserir Filmes')
+@section('title', 'Inserir Banner')
 
 
  	<!--grid-->
@@ -27,31 +27,11 @@
 
         <h3 id="forms-example" class="">@yield('title')</h3>
 
-        <form action="input-filme" method="POST" enctype="multipart/form-data">
+        <form action="input-banner" method="POST" enctype="multipart/form-data">
             {{ csrf_field() }}
         <div class="form-group">
             <label for="exampleInputEmail1">Nome:</label>
             <input type="text" class="form-control" id="exampleInputEmail1" name="nome" placeholder="Nome do Filme">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Categoria:</label>
-            <select name="categoria" id="selector1" class="form-control1" >
-                <option value="Selecione">Selecione</option>
-				<option>Ação</option>
-				<option>Aventura</option>
-				<option>Animação</option>
-				<option>Comédia</option>
-				<option>Ficção Científica</option>
-				<option>Suspense</option>
-				<option>Drama</option>
-				<option>Nacionais</option>
-				<option>Terror</option>
-				<option>Maiores de 18</option>
-			</select>
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Link:</label>
-            <input type="text" class="form-control" id="exampleInputPassword1" name="link" placeholder="http://www.exemplo.com.br">
         </div>
 
         <div class="form-group">

@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class FilmeRequest extends FormRequest
+class BannerRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,11 +24,9 @@ class FilmeRequest extends FormRequest
     public function rules()
     {
         return [
-            // validações campos Filme
+            // validações campos Banner
             'nome'          => 'required|max:255|min:3',
-            'categoria'     => 'required|max:255|min:3',
-            'image'         => 'required|mimes:jpeg,jpg,png|max:900',
-            'link'          => 'required|max:255',
+            'image'         => 'required|mimes:jpeg,png|max:900',
         ];
     }
 }

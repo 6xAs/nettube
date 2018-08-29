@@ -6,7 +6,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-       <h1> <a class="navbar-brand" href="home-painel">Painel-Nettube</a></h1>
+       <h1> <a class="navbar-brand" href="{{ url('/home-painel') }}">Painel-Nettube</a></h1>
        </div>
      <div class=" border-bottom">
     <div class="full-left">
