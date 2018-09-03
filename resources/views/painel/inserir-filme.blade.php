@@ -53,10 +53,22 @@
             <label for="exampleInputPassword1">Link:</label>
             <input type="text" class="form-control" id="exampleInputPassword1" name="link" placeholder="http://www.exemplo.com.br">
         </div>
+        <div class="form-group">
+
+            <div class="row">
+                        <div class="col-xs-6 col-md-12">
+                          <a href="#" class="thumbnail">
+
+                              <img  id="visualizar" width="200" height="300"  src="#" alt="Resolução Ideal: 100 X 1481 px" />
+                          </a>
+                        </div>
+            </div>
+
+        </div>
 
         <div class="form-group">
             <label for="exampleInputPassword1">Imagem:</label>
-            <input type="file" id="exampleInputFile"  name="image" placeholder="">
+            <input type="file" id="exampleInputFile"  name="image" onchange="imagePrincipal(this);">
         </div>
 
           <button type="submit" class="btn btn-primary" name="enviar">Enviar</button>

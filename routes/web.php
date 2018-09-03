@@ -13,9 +13,19 @@
 
 // Rotas do Site
 Route::get('/', function () {
-    return view('home');
+
+    $filme  = \App\filme::All();
+    $banner = \App\Banner::All();
+    return view('home', compact('filme','banner'));
 });
 
+// ##################################### ROTAS NAVEGAÇÃO DO SITE ###########################################
+
+Route::get('filmes/{id}/assistir', function ($id) {
+    //
+    $filme = \App\Filme::find($id);
+    return view('site.assistir-filme', ['filme'=>$filme]);
+})->name('assistir');
 
 
 Route::get('adm-painel', function () {

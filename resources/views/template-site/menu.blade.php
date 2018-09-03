@@ -2,7 +2,7 @@
     <div class="wrap">
         <div class="header-bottom-left">
             <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt=""/></a>
+                <a href="{{url('/')}}"><img src="/../images/logo.png" alt=""/></a>
             </div>
 
 
