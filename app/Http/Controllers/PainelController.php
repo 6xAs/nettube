@@ -30,7 +30,7 @@ class PainelController extends Controller
     public function index()
     {
         $filme = \App\filme::All();
-        return view('painel.home', compact('filme'));
+        return view('painel.home', compact('filme','nome'));
 
     }
 

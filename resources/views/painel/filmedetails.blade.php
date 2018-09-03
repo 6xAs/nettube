@@ -47,12 +47,19 @@
             </div>
             <div class="form-group">
 
-                 <img id="mostra" src="/../img-filmes/{{ $filme->image }}" width="200" height="300" alt="" />
+                <div class="row">
+                            <div class="col-xs-6 col-md-12">
+                              <a href="#" class="thumbnail">
+
+                                  <img  id="visualizar" width="200" height="300"  src="#" alt="Resolução Ideal: 100 X 1481 px" />
+                              </a>
+                            </div>
+                </div>
 
             </div>
 
              <div class="form-group">
-                 <input type="file" id="exampleInputFile"  name="image" placeholder="">
+                 <input type="file" id="exampleInputFile"  name="image" onchange="imagePrincipal(this);">
              </div>
              {!!Form::submit('ATUALIZAR', ['class' => 'btn btn-lg btn-primary'])!!}
 

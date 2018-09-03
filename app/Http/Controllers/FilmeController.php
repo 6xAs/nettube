@@ -105,7 +105,7 @@ class FilmeController extends Controller
 
     public function destroy($id, Request $request){
 
-        $fileName_principal = DB::table('filme')->value('image');
+        $fileName_principal = DB::table('filme')->value('nome','categoria','link','image');
         //example it.png, which is located in `public/uploads/masters/logocatagory_Computers` folder
         \App\filme::destroy($id);
         DB::table('filme')->delete($id);

@@ -22,12 +22,22 @@ Route::get('adm-painel', function () {
     return view('auth.login');
 });
 
+// Fim Rotas do Site
+
+
+
 // Rotas do Painel
 Auth::routes();
 
 Route::get('home-painel', 'PainelController@index')->name('painel.home');
 
-// Inserir Filme no BD
+// Fim  Rotas do Painel
+
+
+
+
+
+// ##################################### ROTAS DOS FILMES ###########################################
 Route::post('input-filme', 'FilmeController@insert');
 
 // Pag. Inserir Filme
@@ -45,17 +55,31 @@ Route::resource('filmes', 'FilmeController');
 
 // Deletar Filme
 Route::resource('deletarfilme', 'FilmeController');
+// ##################################### / FIM ROTAS DOS FILMES ###########################################
 
 
+
+
+// ##################################### ROTAS DOS BANNERS ###########################################
 // Pag. Inserir banner
 Route::get('inserir-banner', function () {
     return view('painel.inserir-banner');
 });
 
 // Pag. Listar Banner
-Route::get('listar-banner', function () {
-    return view('painel.listar-banner');
-});
+Route::get('listar-banner', 'bannerController@listar')->name('listar-banner');
 
 // Inserir Banner no BD
 Route::post('input-banner', 'BannerController@insert');
+
+
+Route::resource('editbanner', 'BannerController');
+
+
+Route::resource('banner', 'BannerController');
+
+// Deletar banner
+Route::resource('deletarbanner', 'BannerController');
+
+
+// ##################################### / FIM ROTAS DOS BannerRequest ###########################################
