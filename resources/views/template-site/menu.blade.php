@@ -10,14 +10,14 @@
     </div>
     <!-- Search -->
    <div class="header-bottom-right">
-     <div class="search">
-            <input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-            <input type="submit" value="Subscribe" id="submit" name="submit">
-            <div id="response"> </div>
+     <div class="col_1_of_2 span_1_of_2">
+
+            @include('site.find-filmes')
      </div>
      <!--/ Search -->
 
 </div>
+
  <div class="clear"></div>
  </div>
 </div>

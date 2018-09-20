@@ -11,7 +11,7 @@
 |
 */
 
-// Rotas do Site
+// Rotas Home do site
 Route::get('/', function () {
 
     $filme  = \App\filme::All();
@@ -31,6 +31,10 @@ Route::get('filmes/{id}/assistir', function ($id) {
 Route::get('adm-painel', function () {
     return view('auth.login');
 });
+
+
+// Rotas Encontrar filmes
+Route::resource('find-filmes', 'SiteController');
 
 // Fim Rotas do Site
 

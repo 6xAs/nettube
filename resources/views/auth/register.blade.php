@@ -2,11 +2,12 @@
 
 @section('content')
 
-<!-- 404
+
 <div class="">
     <marquee><img src="images/404.png" alt="image404"></marquee>
 </div>
--->
+
+<!--
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -80,5 +81,5 @@
         </div>
     </div>
 </div>
-
+-->
 @endsection

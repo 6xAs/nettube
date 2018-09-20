@@ -122,50 +122,26 @@ body{
 	margin-top:10px;
 }
 .header-bottom-right{
+search
+}
 
-	width:100%;
-	margin-top:10px;
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
 }
-.search {
-	background:#fff;
-	border: 1px solid #ddd;
-	position: relative;
-	float:left;
-	margin:6px 20px 0 0;
-	width: 900px;
-}
-.search input[type="text"] {
-	border: none;
-	outline: none;
-	background: none;
-	font-size:0.85em;
-	font-family: 'Exo 2', sans-serif;
-	color:#777;
-	width:800px;
-	padding:7px;
-	-webkit-apperance:none;
-	margin:0;
-	-webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease-out;
-	-ms-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-}
-.search input[type="text"]:focus{
-	width:500px;
-}
-.search input[type="submit"] {
-	border: none;
-	text-indent: -8888px;
-	outline:none;
-	cursor: pointer;
-	background: url("../images/search.png") no-repeat 0px 3px;
-	width:30px;
-	height:25px;
-	padding:8px;
 
-}
-.search input[type="submit"]:active {
-	position:relative;
+input[type=text]:focus {
+    width: 100%;
 }
 .tag-list{
 	float:left;
@@ -2127,6 +2103,7 @@ ul.delivery-list li a:hover{
 	color: #FFF;
 	cursor: pointer;
 	background:#4CB1CA;
+
 	border:none;
 	outline:none;
 	font-family: 'Exo 2', sans-serif;

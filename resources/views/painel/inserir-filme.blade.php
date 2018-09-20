@@ -67,8 +67,10 @@
         </div>
 
         <div class="form-group">
-            <label for="exampleInputPassword1">Imagem:</label>
-            <input type="file" id="exampleInputFile"  name="image" onchange="imagePrincipal(this);">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="customFile" name="image" onchange="imagePrincipal(this);">
+              <label class="custom-file-label" for="nome">Escolha a Imagem</label>
+            </div>
         </div>
 
           <button type="submit" class="btn btn-primary" name="enviar">Enviar</button>

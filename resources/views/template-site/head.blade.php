@@ -2,11 +2,12 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Free Leoshop Website Template | Home :: w3layouts</title>
+<title>@yield('title')</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/../css/style-site.css" rel="stylesheet" type="text/css" media="all" />
 <link href="/../css/form.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/../css/bootstrap.mim.css" rel="stylesheet" type="text/css" media="all" />
 <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="js/jquery1.min.js"></script>
 <!-- start menu -->

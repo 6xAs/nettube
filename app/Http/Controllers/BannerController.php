@@ -81,7 +81,7 @@ class BannerController extends Controller
 
         // Validação dos dados
         $nome                       = $request->input('nome');
-        $image                     = $request->file('image');
+        $image                      = $request->file('image');
 
 
           DB::table('banner')

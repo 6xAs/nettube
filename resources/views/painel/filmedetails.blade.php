@@ -48,10 +48,9 @@
             <div class="form-group">
 
                 <div class="row">
-                            <div class="col-xs-6 col-md-12">
+                            <div class="col-xs-4 col-md-4">
                               <a href="#" class="thumbnail">
-
-                                  <img  id="visualizar" width="200" height="300"  src="#" alt="Resolução Ideal: 100 X 1481 px" />
+                                  <img id="visualizar" src="/../img-filmes/{{ $filme->image }}" width="200" height="300" alt="" />
                               </a>
                             </div>
                 </div>
